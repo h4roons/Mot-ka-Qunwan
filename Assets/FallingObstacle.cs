@@ -22,7 +22,7 @@ public class FallingObstacle : MonoBehaviour
         if (col.gameObject.name.Equals("Sphere"))
         {
             Debug.Log("Collided");
-            Debug.Log("Got ya");
+            Debug.Log("My name is Haroon");
         }
     }
 
