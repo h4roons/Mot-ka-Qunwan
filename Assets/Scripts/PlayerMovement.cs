@@ -5,7 +5,8 @@ public class PlayerMovement : MonoBehaviour
 {
 
     [SerializeField] private Rigidbody rb;
-    [SerializeField] private float force = 10f;
+    [SerializeField] private float upforce = 10f;
+    [SerializeField] private float downforce;
     // Update is called once per frame
     //but we use fixed update method to even the frames per sec
     //on faster devices
@@ -15,12 +16,12 @@ public class PlayerMovement : MonoBehaviour
       
        if (Input.GetKey(KeyCode.Mouse0))
        {
-          rb.AddForce(0,force*Time.deltaTime, 0, ForceMode.VelocityChange);
+          rb.AddForce(0,0, upforce * Time.deltaTime, ForceMode.Force);
             Debug.Log("held");
        }
        if (!Input.GetKey(KeyCode.Mouse0))
        {
-          rb.AddForce(0, -force*Time.deltaTime, 0, ForceMode.VelocityChange);
+          rb.AddForce(0,0 , downforce * Time.deltaTime, ForceMode.Acceleration);
             Debug.Log("Not Held");
        }
       
