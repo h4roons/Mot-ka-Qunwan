@@ -427,7 +427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1840081475}
-  offset: {x: 21, y: 5, z: 6}
+  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1047621449
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,7 +929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1840081476}
-  upforce: -1000
+  upforce: -2500
   downforce: 2000
 --- !u!4 &1840081475 stripped
 Transform:
@@ -1147,14 +1147,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3717870526527157825}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 8.5, y: -18, z: -109.2}
+  m_LocalRotation: {x: -0.9855652, y: -0.050327692, z: -0.13151734, w: -0.09397635}
+  m_LocalPosition: {x: 2.2, y: -68.7, z: -45.3}
   m_LocalScale: {x: 1.7983543, y: 1.7983543, z: 31.32824}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 325524063678170179}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -189.904, y: -15.8289795, z: -7.2269897}
 --- !u!33 &3184187755155914994
 MeshFilter:
   m_ObjectHideFlags: 0

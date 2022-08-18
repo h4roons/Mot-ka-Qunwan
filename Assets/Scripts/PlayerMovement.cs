@@ -10,22 +10,34 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     //but we use fixed update method to even the frames per sec
     //on faster devices
+
+    void Update()
+    {
+
+
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+
+
+            if (touch.phase == TouchPhase.Stationary)
+            {
+
+                rb.AddForce(0, 0, upforce * Time.deltaTime, ForceMode.Force);
+                Debug.Log("held");
+            }
+        }
+    }
     void FixedUpdate()
     {
 
-      
-       if (Input.GetKey(KeyCode.Mouse0))
-       {
-          rb.AddForce(0,0, upforce * Time.deltaTime, ForceMode.Force);
-            Debug.Log("held");
-       }
-       if (!Input.GetKey(KeyCode.Mouse0))
-       {
-          rb.AddForce(0,0 , downforce * Time.deltaTime, ForceMode.Acceleration);
-            Debug.Log("Not Held");
-       }
-      
-   
-    }
+        rb.AddForce(0, 0, downforce * Time.deltaTime, ForceMode.Acceleration);
+        Debug.Log("Not Held");
 
+
+
+
+
+    }
 }
+
