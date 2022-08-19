@@ -1,11 +1,13 @@
-
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class EndTrigger : MonoBehaviour
+public class endTrigger : MonoBehaviour
 {
-    public Gmanager gameManager;
-    void OnTriggerEnter()
+    public Gmanager gm;
+
+    public void OnTriggerEnter()
     {
-        gameManager.CompleteGame();
+        gm.CompleteGame();
     }
 }

@@ -9,8 +9,9 @@ public class Gmanager : MonoBehaviour
     public GameObject completelevelUI;
     public void CompleteGame()
     {
+        Debug.Log("WON");
         completelevelUI.SetActive(true);
-
+        
     }
     public void EndGame()
     {

@@ -1,22 +1,23 @@
 
 using UnityEngine;
 
-public class FallingObstacle : MonoBehaviour
+public class plankobstacle : MonoBehaviour
 {
-    Rigidbody rb;
+    Rigidbody Rb;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        Rb = GetComponent<Rigidbody>();
     }
 
+   
     public void OnCollisionEnter(Collision col)
     {
         if (col.collider.tag == "Player")
         {
-            rb.useGravity = true;
+            Rb.useGravity = true;
+            Rb.constraints = RigidbodyConstraints.None;
             Debug.Log("Collided");
         }
     }
-
 }
