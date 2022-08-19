@@ -7,18 +7,21 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody rb;
     [SerializeField] private float upforce = 10f;
     [SerializeField] private float downforce;
-    
+
 
     void Update()
     {
 
 
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (Input.touchCount > 0)
         {
-            
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Stationary)
+            {
                 rb.AddForce(0, 0, upforce * Time.deltaTime, ForceMode.Force);
-                
-           
+
+            }
+
         }
     }
     void FixedUpdate()
@@ -32,6 +35,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    
+
 }
 
