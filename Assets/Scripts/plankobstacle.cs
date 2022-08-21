@@ -17,7 +17,6 @@ public class plankobstacle : MonoBehaviour
         {
             Rb.useGravity = true;
             Rb.constraints = RigidbodyConstraints.None;
-            Debug.Log("Collided");
         }
     }
 }

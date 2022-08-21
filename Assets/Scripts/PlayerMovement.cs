@@ -7,32 +7,30 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody rb;
     [SerializeField] private float upforce = 10f;
     [SerializeField] private float downforce;
+   
 
-
-    void Update()
+    void FixedUpdate()
     {
-
-
-        if (Input.touchCount > 0)
-        {
-            Touch touch = Input.GetTouch(0);
-            if (touch.phase == TouchPhase.Stationary)
+       
+       
+            if (Input.touchCount > 0)
             {
-                rb.AddForce(0, 0, upforce * Time.deltaTime, ForceMode.Force);
+                Touch touch = Input.GetTouch(0);
+                if (touch.phase == TouchPhase.Stationary)
+                {
+                    rb.AddForce(0, 0, upforce * Time.deltaTime, ForceMode.Force);
+
+                }
 
             }
 
-        }
-    }
-    void FixedUpdate()
-    {
+            rb.AddForce(0, 0, downforce * Time.deltaTime, ForceMode.Acceleration);
 
-        rb.AddForce(0, 0, downforce * Time.deltaTime, ForceMode.Acceleration);
-
-        if (rb.position.y < -1f)
-        {
-            FindObjectOfType<Gmanager>().EndGame();
-        }
+            if (rb.position.y < -1f)
+            {
+                FindObjectOfType<Gmanager>().EndGame();
+            }
+       
     }
 
 

@@ -7,9 +7,18 @@ public class Gmanager : MonoBehaviour
     bool gameEnded = false; 
     public float restartdelay = 2f;
     public GameObject completelevelUI;
+    public GameObject player;
+    public GameObject stadium;
+    
+    public void Begin()
+    {
+        player.GetComponent<PlayerMovement>().enabled = true;
+        stadium.GetComponent<stadiumMovement>().enabled = true;
+    }
+
     public void CompleteGame()
     {
-        Debug.Log("WON");
+        
         completelevelUI.SetActive(true);
         
     }

@@ -3,19 +3,13 @@ using UnityEngine;
 
 public class FallingObstacle : MonoBehaviour
 {
-    Rigidbody rb;
-
-    void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-    }
+    [SerializeField] private Rigidbody rb;
 
     public void OnCollisionEnter(Collision col)
     {
         if (col.collider.tag == "Player")
         {
             rb.useGravity = true;
-            Debug.Log("Collided");
         }
     }
 
