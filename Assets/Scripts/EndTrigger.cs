@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class endTrigger : MonoBehaviour
+public class EndTrigger : MonoBehaviour
 {
     public Gmanager gm;
 
