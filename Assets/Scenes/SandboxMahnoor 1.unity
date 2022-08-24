@@ -1578,21 +1578,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1840081474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132149441351442}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d717f95068141ae4fb8221c8d99fd92e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 1840081476}
-  upforce: -3500
-  downforce: 2000
 --- !u!54 &1840081476
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1607,7 +1592,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 114
+  m_Constraints: 118
   m_CollisionDetection: 0
 --- !u!1 &1889020162
 GameObject:
@@ -2814,7 +2799,8 @@ GameObject:
   - component: {fileID: 543450653446870440}
   - component: {fileID: 1840081476}
   - component: {fileID: 919132149441351443}
-  - component: {fileID: 1840081474}
+  - component: {fileID: 919132149441351444}
+  - component: {fileID: 919132149441351445}
   m_Layer: 0
   m_Name: Rider
   m_TagString: Player
@@ -2834,9 +2820,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d99c8e60f041c4e96c576a220a43d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement: {fileID: 1840081474}
+  movement: {fileID: 0}
   rb: {fileID: 1840081476}
   gm: {fileID: 657711485}
+--- !u!114 &919132149441351444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149441351442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f89a632e62e4624bbb424ec2c02ce32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedModifier: -0.02
+--- !u!114 &919132149441351445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149441351442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d717f95068141ae4fb8221c8d99fd92e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  upforce: 10
+  downforce: 0
 --- !u!4 &950736389928654715
 Transform:
   m_ObjectHideFlags: 0

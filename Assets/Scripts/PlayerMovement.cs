@@ -20,17 +20,17 @@ public class PlayerMovement : MonoBehaviour
                 Touch touch = Input.GetTouch(0);
                 if (touch.phase == TouchPhase.Stationary)
                 {
+                
+                 //  rb.AddForce(0, 0, upforce * Time.deltaTime, ForceMode.Force);
                     
-                    rb.AddForce(0, 0, upforce * Time.deltaTime, ForceMode.Force);
-
-                }
+            }
 
             }
 
-            rb.AddForce(0, 0, downforce * Time.deltaTime, ForceMode.Acceleration);
-            
+ //       rb.AddForce(0, 0, downforce * Time.deltaTime, ForceMode.Acceleration);  
 
-            if (rb.position.y < -1f)
+
+        if (rb.position.y < -1f)
             {
                 FindObjectOfType<Gmanager>().EndGame();
             }
