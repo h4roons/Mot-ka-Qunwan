@@ -218,6 +218,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 72893635275354075, guid: 796a7904ff2e3a7428555da8fb74e404, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 72893635275354075, guid: 796a7904ff2e3a7428555da8fb74e404, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 72893635275354075, guid: 796a7904ff2e3a7428555da8fb74e404, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 72893636871335651, guid: 796a7904ff2e3a7428555da8fb74e404, type: 3}
+      propertyPath: m_text
+      value: Restart
+      objectReference: {fileID: 0}
+    - target: {fileID: 72893637009866328, guid: 796a7904ff2e3a7428555da8fb74e404, type: 3}
+      propertyPath: m_fontSize
+      value: 32.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 72893637009866328, guid: 796a7904ff2e3a7428555da8fb74e404, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4f91e240c78228246ba2fbb7d71c869b, type: 2}
+    - target: {fileID: 72893637009866328, guid: 796a7904ff2e3a7428555da8fb74e404, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4304007749879890115, guid: 4f91e240c78228246ba2fbb7d71c869b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 796a7904ff2e3a7428555da8fb74e404, type: 3}
 --- !u!224 &132752011 stripped
