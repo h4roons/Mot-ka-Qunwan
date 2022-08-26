@@ -5,8 +5,8 @@ public class PlayerMovement : MonoBehaviour
 {
 
     [SerializeField] private Rigidbody rb;
-    [SerializeField] private float upforce = 10f;
-    [SerializeField] private float downforce;
+    //[SerializeField] private float upforce = 10f;
+    //[SerializeField] private float downforce;
    
  
     

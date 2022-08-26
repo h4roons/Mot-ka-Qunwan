@@ -295,6 +295,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6073822876963196382, guid: 8d55e960508c8b243a42b151342c2d7e, type: 3}
+      propertyPath: m_Maskable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6073822876963196382, guid: 8d55e960508c8b243a42b151342c2d7e, type: 3}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 0}

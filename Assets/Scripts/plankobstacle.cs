@@ -3,14 +3,7 @@ using UnityEngine;
 
 public class plankobstacle : MonoBehaviour
 {
-    Rigidbody Rb;
-
-    void Start()
-    {
-        Rb = GetComponent<Rigidbody>();
-    }
-
-   
+    [SerializeField] private Rigidbody Rb;
     public void OnCollisionEnter(Collision col)
     {
         if (col.collider.tag == "Player")
