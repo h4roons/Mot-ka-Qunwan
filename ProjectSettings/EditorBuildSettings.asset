@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: f50decfb5e31b8e45ab8979d8565c7e9
   - enabled: 1
-    path: Assets/Scenes/SandboxMahnoor 1.unity
-    guid: 986bf5f7d75a1e44d95b358e46d4ad2d
+    path: Assets/Scenes/Level 1.unity
+    guid: 6d007c8905edd284ebdf2bc2be8175f9
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
     guid: 5785b5dd72a2c0e4bbe091d918ddf2b0
