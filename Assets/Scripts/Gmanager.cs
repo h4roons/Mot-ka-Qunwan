@@ -28,7 +28,7 @@ public class Gmanager : MonoBehaviour
         {
            gameEnded = true;
            Debug.Log("Game Over");
-           Invoke("Restart", restartdelay);
+           Invoke("Restart", 1f);
         }
     }
 
