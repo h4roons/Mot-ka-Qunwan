@@ -32,7 +32,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (rb.position.y < -1f)
             {
-                FindObjectOfType<Gmanager>().EndGame();
+            stadiumMovement.instance.enabled = false;
+            FindObjectOfType<Gmanager>().EndGame();
             }
        
     }

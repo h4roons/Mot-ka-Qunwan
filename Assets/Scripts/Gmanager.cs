@@ -26,8 +26,10 @@ public class Gmanager : MonoBehaviour
     {
         if(gameEnded == false)
         {
-           gameEnded = true;
-           Debug.Log("Game Over");
+            
+            gameEnded = true;
+            stadiumMovement.instance.enabled = false;
+            Debug.Log("Game Over");
            Invoke("Restart", 1f);
         }
     }

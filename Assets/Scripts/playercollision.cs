@@ -1,4 +1,5 @@
-
+using System;
+using System.Collections;
 using UnityEngine;
 
 public class playercollision : MonoBehaviour
@@ -6,15 +7,29 @@ public class playercollision : MonoBehaviour
     [SerializeField] private PlayerMovement movement;
     [SerializeField] private Rigidbody rb;
     public Gmanager gm;
-   
+    public GameObject AudioManager;
+    AudioSource source;
+
+
+
+
+
     void OnCollisionEnter(UnityEngine.Collision col)
     {
-        if (col.collider.tag == "Obstacle")
+        
+        if (col.gameObject.tag == "Obstacle")
         {
+            audioManager.instance.StopSound("Background");
+            audioManager.instance.PlaySound("Collision");
             rb.useGravity = true;
             rb.constraints = RigidbodyConstraints.None;
             movement.enabled = false;
+
             FindObjectOfType<Gmanager>().EndGame();
+           
+            Debug.Log("Collided");
+
+            this.enabled = false;
 
         }
 
@@ -28,6 +43,6 @@ public class playercollision : MonoBehaviour
         }
 
     }
-
-
+    
+    
 }

@@ -25,6 +25,7 @@ public class Drag : MonoBehaviour
                     transform.position.y,
                     transform.position.z + touch.deltaPosition.y * speedModifier);
             }
-        }   
+        }
+        
     }
 }

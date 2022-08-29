@@ -7,6 +7,7 @@ public class obstacletrigg2 : MonoBehaviour
     
     public void OnTriggerEnter()
     {
+        
         obstacle.transform.Rotate(0,90,90);
         obstacle.GetComponent<BoxCollider>().enabled = true;
     }

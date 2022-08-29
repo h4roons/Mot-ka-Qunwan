@@ -8,6 +8,7 @@ public class plankobstacle : MonoBehaviour
     {
         if (col.collider.tag == "Player")
         {
+            stadiumMovement.instance.enabled = false;
             Rb.useGravity = true;
             Rb.constraints = RigidbodyConstraints.None;
         }

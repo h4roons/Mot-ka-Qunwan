@@ -8,7 +8,8 @@ public class obstacletrigger : MonoBehaviour
 
     private void OnTriggerEnter()
     {
-       rb.AddForce(0, 0, force * Time.deltaTime,ForceMode.Impulse);
+        
+        rb.AddForce(0, 0, force * Time.deltaTime,ForceMode.Impulse);
        rb.constraints &= RigidbodyConstraints.None;
     }
 
