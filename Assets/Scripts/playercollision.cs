@@ -21,6 +21,7 @@ public class playercollision : MonoBehaviour
         {
             audioManager.instance.StopSound("Background");
             audioManager.instance.PlaySound("Collision");
+            
             rb.useGravity = true;
             rb.constraints = RigidbodyConstraints.None;
             movement.enabled = false;
@@ -28,14 +29,15 @@ public class playercollision : MonoBehaviour
             FindObjectOfType<Gmanager>().EndGame();
            
             Debug.Log("Collided");
+            
 
-            this.enabled = false;
 
         }
 
         if (col.collider.tag == "Obstacle")
         {
             Time.timeScale = 0.5f;
+           
         }
         else
         {

@@ -9,6 +9,8 @@ public class audioManager : MonoBehaviour
     public Audio[] Soundlist;
 
     public static audioManager instance;
+    
+
     private void Awake()
     {
         foreach(Audio sound in Soundlist)
@@ -28,6 +30,8 @@ public class audioManager : MonoBehaviour
         Audio sound = Array.Find(Soundlist, Audio => Audio.SoundName == name);
         sound.source.Stop();
     }
+ 
+    
     void Start()
     {
        
