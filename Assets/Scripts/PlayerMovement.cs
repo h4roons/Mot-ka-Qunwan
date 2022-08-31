@@ -5,8 +5,8 @@ public class PlayerMovement : MonoBehaviour
 {
 
     [SerializeField] private Rigidbody rb;
-    [SerializeField] private float upforce = 10f;
-    [SerializeField] private float downforce;
+    //[SerializeField] private float upforce = 10f;
+    //[SerializeField] private float downforce;
    
  
     
@@ -21,13 +21,13 @@ public class PlayerMovement : MonoBehaviour
                 if (touch.phase == TouchPhase.Stationary)
                 {
                 
-                   rb.AddForce(0, 0, upforce * Time.deltaTime, ForceMode.Force);
+                 //  rb.AddForce(0, 0, upforce * Time.deltaTime, ForceMode.Force);
                     
             }
 
             }
 
-        rb.AddForce(0, 0, downforce * Time.deltaTime, ForceMode.Acceleration);  
+ //       rb.AddForce(0, 0, downforce * Time.deltaTime, ForceMode.Acceleration);  
 
 
         if (rb.position.y < -1f)

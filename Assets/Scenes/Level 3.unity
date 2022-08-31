@@ -4132,8 +4132,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1840081476}
-  upforce: -3000
-  downforce: 2500
 --- !u!4 &950736389928654715
 Transform:
   m_ObjectHideFlags: 0
