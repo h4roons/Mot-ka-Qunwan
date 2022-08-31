@@ -23,9 +23,12 @@ public class Drag : MonoBehaviour
                 transform.position = new Vector3(
                     transform.position.x,
                     transform.position.y,
-                    transform.position.z + touch.deltaPosition.y * speedModifier);
+                    Mathf.Clamp(transform.position.z + touch.deltaPosition.y * speedModifier, -11.98f, -0.51f));
             }
         }
+        var currentPos = transform.position;
         
+        transform.position = currentPos;
+
     }
 }
