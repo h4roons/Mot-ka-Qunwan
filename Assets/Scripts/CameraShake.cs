@@ -19,7 +19,7 @@ public class CameraShake : MonoBehaviour
         }
         else
         {
-            Destroy(this);
+           // Destroy(this);
         }
     }
     public void ShakeCamera(float _shakeDuration,float _shakeAmount)

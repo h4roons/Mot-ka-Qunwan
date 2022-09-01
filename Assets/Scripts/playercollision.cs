@@ -22,7 +22,7 @@ public class playercollision : MonoBehaviour
             audioManager.instance.StopSound("Background");
             audioManager.instance.PlaySound("Collision");
 
-            CameraShake.instance.ShakeCamera(0.5f,0.2f);
+            CameraShake.instance.ShakeCamera(0.5f,0.1f);
 
             rb.useGravity = true;
             rb.constraints = RigidbodyConstraints.None;
