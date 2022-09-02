@@ -10,7 +10,7 @@ public class obstaclesimple : MonoBehaviour
     {
         if (col.collider.tag == "Player")
         {
-            
+
             rb.isKinematic = false;
             
         }
