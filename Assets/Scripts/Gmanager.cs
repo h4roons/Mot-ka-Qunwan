@@ -12,6 +12,7 @@ public class Gmanager : MonoBehaviour
     
     public void Begin()
     {
+        player.GetComponent<Drag>().enabled = true;
         player.GetComponent<PlayerMovement>().enabled = true;
         stadium.GetComponent<stadiumMovement>().enabled = true;
     }
@@ -29,8 +30,9 @@ public class Gmanager : MonoBehaviour
             
             gameEnded = true;
             stadiumMovement.instance.enabled = false;
+            Drag.instance.enabled = false;
             Debug.Log("Game Over");
-           Invoke("Restart", 1f);
+           Invoke("Restart", 1.5f);
         }
     }
 

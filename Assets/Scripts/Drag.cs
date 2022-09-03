@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class Drag : MonoBehaviour
 {
+    public static Drag instance;
     private Touch touch;
     [SerializeField]private float speedModifier;
         // Start is called before the first frame update
     void Start()
     {
-        
+        instance = this;
+        this.enabled = false;
     }
 
     // Update is called once per frame

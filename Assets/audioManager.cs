@@ -30,7 +30,7 @@ public class audioManager : MonoBehaviour
         Audio sound = Array.Find(Soundlist, Audio => Audio.SoundName == name);
         sound.source.Stop();
     }
- 
+  
     
     void Start()
     {

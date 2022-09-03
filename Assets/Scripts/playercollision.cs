@@ -9,6 +9,8 @@ public class playercollision : MonoBehaviour
     public Gmanager gm;
     public GameObject AudioManager;
     AudioSource source;
+    
+
 
 
 
@@ -20,9 +22,27 @@ public class playercollision : MonoBehaviour
         if (col.gameObject.tag == "Obstacle")
         {
             audioManager.instance.StopSound("Background");
-            audioManager.instance.PlaySound("Collision");
+            bool  played = false;
+            
+            if (!played)
+            {
+                audioManager.instance.PlaySound("Collision");
+                played = true;
+            }
 
-            CameraShake.instance.ShakeCamera(0.5f,0.1f);
+
+
+
+                CameraShake.instance.enabled = true;
+                CameraShake.instance.ShakeCamera(0.5f, 0.1f);
+            
+            
+                
+            
+            
+                
+            
+            
 
             rb.useGravity = true;
             rb.constraints = RigidbodyConstraints.None;
@@ -36,15 +56,20 @@ public class playercollision : MonoBehaviour
 
         }
 
+       
+        
+
         if (col.collider.tag == "Obstacle")
         {
             Time.timeScale = 0.5f;
+            
            
         }
         else
         {
             Time.timeScale = 1;
         }
+        
 
     }
     
