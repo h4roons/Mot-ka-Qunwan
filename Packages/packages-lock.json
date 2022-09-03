@@ -143,7 +143,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.purchasing": {
+<<<<<<< HEAD
       "version": "4.2.1",
+=======
+      "version": "4.3.0",
+>>>>>>> origin/main
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -186,7 +190,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.services.analytics": {
+<<<<<<< HEAD
       "version": "4.0.1",
+=======
+      "version": "4.1.0",
+>>>>>>> origin/main
       "depth": 1,
       "source": "registry",
       "dependencies": {
