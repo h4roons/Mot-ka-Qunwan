@@ -10,6 +10,7 @@ public class stadiumMovement : MonoBehaviour
     private void Start()
     {
         instance = this;
+        
         audioManager.instance.PlaySound("Background");
         
        

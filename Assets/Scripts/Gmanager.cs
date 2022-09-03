@@ -32,13 +32,13 @@ public class Gmanager : MonoBehaviour
             stadiumMovement.instance.enabled = false;
             Drag.instance.enabled = false;
             Debug.Log("Game Over");
-           Invoke("Restart", 1.5f);
+           Invoke("Restart", 3.5f);
         }
     }
 
     void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
+        
     }
 }

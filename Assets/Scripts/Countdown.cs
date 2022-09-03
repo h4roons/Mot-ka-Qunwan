@@ -26,7 +26,14 @@ public class Countdown : MonoBehaviour
         }
 
         CountdownDisplay.text = "GO!";
+        bool played = false;
+        if (!played)
+        {
+            audioManager.instance.PlaySound("Game Start");
+            played = true;
+        }
         gm.Begin();
+        
         yield return new WaitForSeconds(1f);
         CountdownDisplay.gameObject.SetActive(false);
 
