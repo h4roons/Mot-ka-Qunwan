@@ -9,6 +9,6 @@ public class obstacletrigg2 : MonoBehaviour
     {
         
         obstacle.transform.Rotate(0,90,90);
-        obstacle.GetComponent<CapsuleCollider>().enabled = true;
+        obstacle.GetComponent<BoxCollider>().enabled = true;
     }
 }
