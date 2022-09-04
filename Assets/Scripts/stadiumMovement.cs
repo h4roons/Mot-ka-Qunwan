@@ -4,7 +4,7 @@ using UnityEngine;
 public class stadiumMovement : MonoBehaviour
 {
     public static stadiumMovement instance;  
-    [SerializeField] private float _speed;
+    [SerializeField] public float _speed;
     [SerializeField] private Transform _cubeAxis;
 
     private void Start()

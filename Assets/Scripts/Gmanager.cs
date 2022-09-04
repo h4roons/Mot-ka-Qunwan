@@ -12,7 +12,7 @@ public class Gmanager : MonoBehaviour
     
     public void Begin()
     {
-        player.GetComponent<Drag>().enabled = true;
+        Drag.instance.enabled = true;
         player.GetComponent<PlayerMovement>().enabled = true;
         stadium.GetComponent<stadiumMovement>().enabled = true;
     }

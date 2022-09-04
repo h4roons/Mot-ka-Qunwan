@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class playercollision : MonoBehaviour
 {
+    public static playercollision instance;
     [SerializeField] private PlayerMovement movement;
     [SerializeField] private Rigidbody rb;
     public Gmanager gm;
     public GameObject AudioManager;
     AudioSource source;
-    
 
 
 
 
+    private void Start()
+    {
+        instance = this;
+    }
 
 
     void OnCollisionEnter(UnityEngine.Collision col)

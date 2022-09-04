@@ -6,12 +6,13 @@ public class Drag : MonoBehaviour
 {
     public static Drag instance;
     private Touch touch;
+    
     [SerializeField]private float speedModifier;
         // Start is called before the first frame update
     void Start()
     {
         instance = this;
-        this.enabled = false;
+        this.enabled = false ;
     }
 
     // Update is called once per frame
@@ -22,6 +23,7 @@ public class Drag : MonoBehaviour
             touch = Input.GetTouch(0);
             if(touch.phase==TouchPhase.Moved)
             {
+                
                 transform.position = new Vector3(
                     transform.position.x,
                     transform.position.y,
