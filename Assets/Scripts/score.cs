@@ -11,6 +11,6 @@ public class score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoretext.SetText((cube.rotation.x+1).ToString("0"));
+        scoretext.SetText(((cube.rotation.x+1)*45f).ToString("0"));
     }
 }
