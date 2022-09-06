@@ -52,8 +52,7 @@ public class playercollision : MonoBehaviour
             rb.constraints = RigidbodyConstraints.None;
             movement.enabled = false;
 
-            FindObjectOfType<Gmanager>().EndGame();
-           
+            //FindObjectOfType<Gmanager>().EndGame();
             Debug.Log("Collided");
             
 
@@ -66,8 +65,8 @@ public class playercollision : MonoBehaviour
         if (col.collider.tag == "Obstacle")
         {
             Time.timeScale = 0.5f;
-            
-           
+            FindObjectOfType<Gmanager>().EndGame();
+
         }
         else
         {
