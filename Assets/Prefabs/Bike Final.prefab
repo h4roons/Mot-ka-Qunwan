@@ -2432,7 +2432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FrontWheel: {fileID: 1922610787324432830}
   Backwheel: {fileID: 5008944420427239999}
-  speed: 10
+  speed: 100
 --- !u!54 &5008944418940138205
 Rigidbody:
   m_ObjectHideFlags: 0

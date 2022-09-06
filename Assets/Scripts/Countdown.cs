@@ -6,13 +6,17 @@ using TMPro;
 
 public class Countdown : MonoBehaviour
 {
+    public GameObject timer;
     public Gmanager gm;
     public int CountdownTime;
     public TextMeshProUGUI CountdownDisplay;
 
     public void Start()
     {
+        
         StartCoroutine(CountdownToStart());
+        Timer.instance.enabled = false;
+        timer.SetActive(false) ;
     }
 
     IEnumerator CountdownToStart()
