@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2702858130413182222}
+  CollisionEffect: {fileID: 100002, guid: 0dc6167f1187b4841964eff3ec98ebec, type: 3}
 --- !u!54 &2702858130413182222
 Rigidbody:
   m_ObjectHideFlags: 0

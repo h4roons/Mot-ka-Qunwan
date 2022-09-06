@@ -6,7 +6,6 @@ public class Drag : MonoBehaviour
 {
     public static Drag instance;
     private Touch touch;
-    
     [SerializeField]private float speedModifier;
         // Start is called before the first frame update
     void Start()
@@ -30,9 +29,8 @@ public class Drag : MonoBehaviour
                     Mathf.Clamp(transform.position.z + touch.deltaPosition.y * speedModifier, -11.98f, -0.51f));
             }
         }
-        var currentPos = transform.position;
         
-        transform.position = currentPos;
+           
 
     }
 }

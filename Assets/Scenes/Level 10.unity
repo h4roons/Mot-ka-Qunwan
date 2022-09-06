@@ -11733,7 +11733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31af70968f90a4341bcb9ddea3cfaefe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: {fileID: 0}
+  timer: {fileID: 1212563038}
   restartdelay: 2
   completelevelUI: {fileID: 5757867155812918857}
   player: {fileID: 919132149441351442}
@@ -11765,7 +11765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 982fb4e6288aa4645b50db2910b2e530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: {fileID: 0}
+  timer: {fileID: 1212563038}
   gm: {fileID: 657711485}
   CountdownTime: 3
   CountdownDisplay: {fileID: 1397015123}
@@ -20204,6 +20204,11 @@ Transform:
   m_Father: {fileID: 589584025}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1212563038 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4038063513627251630, guid: 4082463f243ba204f9fb34b568d5371e, type: 3}
+  m_PrefabInstance: {fileID: 1960546441}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1212635500
 PrefabInstance:
   m_ObjectHideFlags: 0

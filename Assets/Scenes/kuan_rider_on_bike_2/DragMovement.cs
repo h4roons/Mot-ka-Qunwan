@@ -6,7 +6,7 @@ public class DragMovement : MonoBehaviour
     private Touch touch;
     [SerializeField]private float speedModifier;
 
-    [SerializeField] private Vector2 clampValues;
+    [SerializeField] private Vector3 clampValues;
 
     [SerializeField] private float maxHandleRotation;
 
@@ -17,33 +17,43 @@ public class DragMovement : MonoBehaviour
    
 
     // Update is called once per frame
-  private  void Update()
+  private  void FixedUpdate()
   {
-       //if (Input.touchCount > 0)
+        //if (Input.touchCount > 0)
         // {
         //    touch = Input.GetTouch(0);
         //    if(touch.phase==TouchPhase.Moved)
-         //   {
-         //        transform.position = new Vector3(
+        //   {
+        //        transform.position = new Vector3(
         //            transform.position.x,
-       //              transform.position.y,
-       //              Mathf.Clamp(transform.position.z + touch.deltaPosition.y * speedModifier, clampValues.x, clampValues.y));
+        //              transform.position.y,
+        //              Mathf.Clamp(transform.position.z + touch.deltaPosition.y * speedModifier, clampValues.x, clampValues.y));
         //     }
-       //  }
+        //  }
 
-        if (!Input.GetMouseButton(0)) return;
-        var xMove = Input.GetAxis("Mouse X");
-      
-        //transformation
-        moveVector.x += xMove * speedModifier * Time.deltaTime;
-        var angleToRotate = maxHandleRotation * xMove;
-        //rotation
-        handleBar.transform.DOLocalRotate(new Vector3(0, 0,angleToRotate), .15f);
-        
-      
-        
-        transform.position = moveVector;
+        if (Input.touchCount > 0)
+        {
+            touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Moved)
+            {
 
+
+                //transformation
+                transform.position = new Vector3(
+                            transform.position.x,
+                            transform.position.y,
+                            Mathf.Clamp(transform.position.z + touch.deltaPosition.y * speedModifier, -0.05f, -12.06f));
+            }
+                //rotation
+                var angleToRotate = maxHandleRotation *transform.rotation.z;
+                handleBar.transform.DOLocalRotate(new Vector3(0, 0, angleToRotate), .15f);
+                
+
+
+
+                transform.position = moveVector;
+            
+        }
 
 
   }
