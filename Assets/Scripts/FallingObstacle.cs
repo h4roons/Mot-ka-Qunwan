@@ -12,6 +12,7 @@ public class FallingObstacle : MonoBehaviour
         {
             Instantiate(pickupEffect, transform.position, transform.rotation);
             rb.useGravity = true;
+            FindObjectOfType<Gmanager>().EndGame();
         }
     }
 

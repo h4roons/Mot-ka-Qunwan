@@ -13,7 +13,8 @@ public class obstaclesimple : MonoBehaviour
         {
             Instantiate(CollisionEffect, transform.position, transform.rotation);
             rb.isKinematic = false;
-            
+            FindObjectOfType<Gmanager>().EndGame();
+
         }
     }
 }

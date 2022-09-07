@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.34602264, g: 0.63208085, b: 0.8686349, a: 1}
+  m_IndirectSpecularColor: {r: 0.34590226, g: 0.63196033, b: 0.8685879, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 110fe99e835e2984db482fd2587cd9f6, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: 81c89beb1d73f394fa0d8986c41cdf42, type: 2}
   m_LightingSettings: {fileID: 1938715040}
 --- !u!196 &4
 NavMeshSettings:
@@ -599,6 +599,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.34
       objectReference: {fileID: 0}
+    - target: {fileID: 3865149080993766634, guid: e42e1cd186f898740bce9401364e5751, type: 3}
+      propertyPath: m_Quality
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4758581957376096108, guid: e42e1cd186f898740bce9401364e5751, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -677,7 +681,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5278836382147309014, guid: e42e1cd186f898740bce9401364e5751, type: 3}
       propertyPath: m_Name
-      value: Bike Final
+      value: Bike ragdoll
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278836382147309014, guid: e42e1cd186f898740bce9401364e5751, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278836382147309014, guid: e42e1cd186f898740bce9401364e5751, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e42e1cd186f898740bce9401364e5751, type: 3}
@@ -892,7 +904,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.00060291344, y: 0.0004811875, z: 0.00003997137}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -989,7 +1001,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.0011049664, y: -0.0005315877, z: 0.000038621947}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -1473,7 +1485,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 2.2255488e-10, y: 0.0009567802, z: 0.000018574181}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -2345,7 +2357,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.000070931266, y: 0.005252012, z: -0.00029175577}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -4476,7 +4488,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.0010688601, y: 0.0010967121, z: 0.00019271908}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -4868,7 +4880,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.0011049648, y: -0.00053158303, z: 0.000028729555}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -5276,7 +5288,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.0032580893, y: 0.0019002417, z: 0.0037539338}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -5357,7 +5369,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.0033442543, y: 0.0019067889, z: 0.0027522394}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -7256,7 +7268,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.000002870977, y: 0.005064942, z: -0.00055719516}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -7382,6 +7394,67 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
   m_PVRTiledBaking: 0
+--- !u!1001 &1947195275
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4758581957376096108, guid: bd85f01b86b34e847a12a1d4da4af8c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758581957376096108, guid: bd85f01b86b34e847a12a1d4da4af8c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.551
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758581957376096108, guid: bd85f01b86b34e847a12a1d4da4af8c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.212
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758581957376096108, guid: bd85f01b86b34e847a12a1d4da4af8c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.108
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758581957376096108, guid: bd85f01b86b34e847a12a1d4da4af8c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7588393
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758581957376096108, guid: bd85f01b86b34e847a12a1d4da4af8c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.1593415
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758581957376096108, guid: bd85f01b86b34e847a12a1d4da4af8c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6052903
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758581957376096108, guid: bd85f01b86b34e847a12a1d4da4af8c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.17999128
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758581957376096108, guid: bd85f01b86b34e847a12a1d4da4af8c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -27.369
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758581957376096108, guid: bd85f01b86b34e847a12a1d4da4af8c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -75.892
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758581957376096108, guid: bd85f01b86b34e847a12a1d4da4af8c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -5.186
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278836382147309009, guid: bd85f01b86b34e847a12a1d4da4af8c1, type: 3}
+      propertyPath: pickupEffect
+      value: 
+      objectReference: {fileID: 100002, guid: 105894b9b3157d84783a4a24732ac29d, type: 3}
+    - target: {fileID: 5278836382147309014, guid: bd85f01b86b34e847a12a1d4da4af8c1, type: 3}
+      propertyPath: m_Name
+      value: Bike Final (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bd85f01b86b34e847a12a1d4da4af8c1, type: 3}
 --- !u!1 &1984519656
 GameObject:
   m_ObjectHideFlags: 0
@@ -9109,6 +9182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedModifier: -0.01
+  pickupEffect: {fileID: 0}
 --- !u!114 &919132149441351445
 MonoBehaviour:
   m_ObjectHideFlags: 0

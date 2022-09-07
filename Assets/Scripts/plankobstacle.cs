@@ -13,6 +13,7 @@ public class plankobstacle : MonoBehaviour
             stadiumMovement.instance.enabled = false;
             Rb.useGravity = true;
             Rb.constraints = RigidbodyConstraints.None;
+            FindObjectOfType<Gmanager>().EndGame();
         }
     }
 }

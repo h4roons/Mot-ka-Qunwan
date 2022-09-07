@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 110fe99e835e2984db482fd2587cd9f6, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: c411d956e5e721543ba2f1d0409fc68d, type: 2}
   m_LightingSettings: {fileID: 1938715040}
 --- !u!196 &4
 NavMeshSettings:
@@ -4817,6 +4817,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3527964456914788134}
     m_Modifications:
+    - target: {fileID: 52265715702181832, guid: 4a0e43b71aaa8194b9123ccd219c6f1f, type: 3}
+      propertyPath: pickupEffect
+      value: 
+      objectReference: {fileID: 100002, guid: 105894b9b3157d84783a4a24732ac29d, type: 3}
     - target: {fileID: 3969488702095433835, guid: 4a0e43b71aaa8194b9123ccd219c6f1f, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -8522,6 +8526,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3527964456914788134}
     m_Modifications:
+    - target: {fileID: 164786427521931528, guid: 5c98233898d8814459f35352dede3f30, type: 3}
+      propertyPath: pickupEffect
+      value: 
+      objectReference: {fileID: 100002, guid: 105894b9b3157d84783a4a24732ac29d, type: 3}
     - target: {fileID: 164786427521931535, guid: 5c98233898d8814459f35352dede3f30, type: 3}
       propertyPath: m_Name
       value: falling
@@ -14939,6 +14947,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3527964456914788134}
     m_Modifications:
+    - target: {fileID: 164786427521931528, guid: 5c98233898d8814459f35352dede3f30, type: 3}
+      propertyPath: pickupEffect
+      value: 
+      objectReference: {fileID: 100002, guid: 105894b9b3157d84783a4a24732ac29d, type: 3}
     - target: {fileID: 164786427521931535, guid: 5c98233898d8814459f35352dede3f30, type: 3}
       propertyPath: m_Name
       value: falling (1)
@@ -24139,6 +24151,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3527964456914788134}
     m_Modifications:
+    - target: {fileID: 52265715702181832, guid: 4a0e43b71aaa8194b9123ccd219c6f1f, type: 3}
+      propertyPath: pickupEffect
+      value: 
+      objectReference: {fileID: 100002, guid: 105894b9b3157d84783a4a24732ac29d, type: 3}
     - target: {fileID: 3969488702095433835, guid: 4a0e43b71aaa8194b9123ccd219c6f1f, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -39970,6 +39986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedModifier: -0.01
+  pickupEffect: {fileID: 0}
 --- !u!114 &919132149441351445
 MonoBehaviour:
   m_ObjectHideFlags: 0
