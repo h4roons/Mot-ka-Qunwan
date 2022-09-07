@@ -585,6 +585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rb: {fileID: 66842891}
+  pickupEffect: {fileID: 100002, guid: 105894b9b3157d84783a4a24732ac29d, type: 3}
 --- !u!23 &66842893
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -718,6 +719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rb: {fileID: 123348276}
+  pickupEffect: {fileID: 100002, guid: 105894b9b3157d84783a4a24732ac29d, type: 3}
 --- !u!23 &123348278
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2052,6 +2054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rb: {fileID: 420739492}
+  pickupEffect: {fileID: 100002, guid: 105894b9b3157d84783a4a24732ac29d, type: 3}
 --- !u!23 &420739494
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3063,7 +3066,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3527964456914788134}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -198.871, y: -179.567, z: 17.406998}
 --- !u!54 &770000878
 Rigidbody:
@@ -3094,6 +3097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rb: {fileID: 770000878}
+  pickupEffect: {fileID: 100002, guid: 105894b9b3157d84783a4a24732ac29d, type: 3}
 --- !u!23 &770000880
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4247,6 +4251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rb: {fileID: 1282057159}
+  pickupEffect: {fileID: 100002, guid: 105894b9b3157d84783a4a24732ac29d, type: 3}
 --- !u!23 &1282057161
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4919,6 +4924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rb: {fileID: 1482106335}
+  pickupEffect: {fileID: 100002, guid: 105894b9b3157d84783a4a24732ac29d, type: 3}
 --- !u!23 &1482106337
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6977,7 +6983,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3527964456914788134}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -186.612, y: -171.665, z: 76.499}
 --- !u!54 &1996699793
 Rigidbody:
@@ -7008,6 +7014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rb: {fileID: 1996699793}
+  pickupEffect: {fileID: 100002, guid: 105894b9b3157d84783a4a24732ac29d, type: 3}
 --- !u!23 &1996699795
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10856,8 +10863,8 @@ Transform:
   - {fileID: 6573010470064768550}
   - {fileID: 1282057157}
   - {fileID: 1482106333}
-  - {fileID: 770000876}
   - {fileID: 1996699791}
+  - {fileID: 770000876}
   - {fileID: 420739490}
   - {fileID: 123348274}
   - {fileID: 66842889}
@@ -13584,6 +13591,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rod
       objectReference: {fileID: 0}
+    - target: {fileID: 8640140935908099112, guid: 1e20a63bd9719534aa330e8c56b465b7, type: 3}
+      propertyPath: pickupEffect
+      value: 
+      objectReference: {fileID: 100002, guid: 105894b9b3157d84783a4a24732ac29d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e20a63bd9719534aa330e8c56b465b7, type: 3}
 --- !u!1 &5944145699841145278

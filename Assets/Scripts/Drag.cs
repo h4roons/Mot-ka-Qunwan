@@ -7,9 +7,11 @@ public class Drag : MonoBehaviour
     public static Drag instance;
     private Touch touch;
     [SerializeField]private float speedModifier;
+    public GameObject pickupEffect;
         // Start is called before the first frame update
     void Start()
     {
+        Instantiate(pickupEffect, transform.position, transform.rotation);
         instance = this;
         this.enabled = false ;
     }

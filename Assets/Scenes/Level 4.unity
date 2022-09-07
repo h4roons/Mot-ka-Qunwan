@@ -10750,6 +10750,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPCs
       objectReference: {fileID: 0}
+    - target: {fileID: 2736930261094333890, guid: 60826e34024eda74a9b033f21689a367, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60826e34024eda74a9b033f21689a367, type: 3}
 --- !u!1 &2749273217286316857

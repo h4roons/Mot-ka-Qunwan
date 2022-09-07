@@ -2491,6 +2491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedModifier: -0.01
+  pickupEffect: {fileID: 100000, guid: be144c6fe61210446acfc166a2f668cb, type: 3}
 --- !u!96 &-7618240275549590731
 TrailRenderer:
   serializedVersion: 2
