@@ -30,8 +30,8 @@ public class Gmanager : MonoBehaviour
 
     public void CompleteGame()
     {
-        
-        completelevelUI.SetActive(false);
+
+        SceneManager.LoadScene(2); 
         
     }
     public void EndGame()

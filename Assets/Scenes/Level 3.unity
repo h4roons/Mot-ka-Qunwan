@@ -8630,6 +8630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedModifier: -0.01
+  pickupEffect: {fileID: 0}
 --- !u!114 &919132149441351445
 MonoBehaviour:
   m_ObjectHideFlags: 0
