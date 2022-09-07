@@ -75,6 +75,6 @@ public class playercollision : MonoBehaviour
         
 
     }
-    
+
     
 }

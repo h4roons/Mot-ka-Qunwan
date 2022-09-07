@@ -21,14 +21,21 @@ public class PauseButton : MonoBehaviour
     public void Restart()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (SceneManager.GetActiveScene().buildIndex > 3)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        else
+        {
+            SceneManager.LoadScene(PlayerPrefs.GetInt("Level"));
+        }
     }
     public void LevelSelector()
     {
         PauseMenu.SetActive(false);
         Time.timeScale = 1f;
         
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Level Selector");
     }
     public void MainMenu()
     {

@@ -19,6 +19,8 @@ public class Gmanager : MonoBehaviour
     }
     public void Begin()
     {
+
+        PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
         timer.SetActive(true);
         Timer.instance.enabled = true;   
         Drag.instance.enabled = true;
@@ -29,7 +31,7 @@ public class Gmanager : MonoBehaviour
     public void CompleteGame()
     {
         
-        completelevelUI.SetActive(true);
+        completelevelUI.SetActive(false);
         
     }
     public void EndGame()
@@ -41,9 +43,9 @@ public class Gmanager : MonoBehaviour
             stadiumMovement.instance.enabled = false;
             Drag.instance.enabled = false;
             Timer.instance.enabled = false;
-            SceneManager.LoadScene(3);
+            Invoke("Restart", 2f);
             Debug.Log("Game Over");
-           //Invoke("Restart", 3.5f);
+           
         }
     }
 
@@ -51,7 +53,7 @@ public class Gmanager : MonoBehaviour
     {
         
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(3);
         Timer.instance.enabled = false;
         timer.SetActive(false);
 

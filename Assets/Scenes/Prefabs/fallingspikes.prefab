@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 7599140313480958348}
-  pickupEffect: {fileID: 0}
+  pickupEffect: {fileID: 100002, guid: 105894b9b3157d84783a4a24732ac29d, type: 3}
 --- !u!65 &4387609117687605796
 BoxCollider:
   m_ObjectHideFlags: 0

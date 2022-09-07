@@ -60,6 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 8490646928217457333}
+  CollisionEffect: {fileID: 100002, guid: 105894b9b3157d84783a4a24732ac29d, type: 3}
 --- !u!23 &8490646928217457355
 MeshRenderer:
   m_ObjectHideFlags: 0

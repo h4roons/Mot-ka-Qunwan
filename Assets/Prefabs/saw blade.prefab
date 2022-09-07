@@ -213,3 +213,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 5301587359981712751}
+  CollisionEffect: {fileID: 100002, guid: 105894b9b3157d84783a4a24732ac29d, type: 3}
