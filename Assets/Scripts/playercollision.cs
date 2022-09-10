@@ -5,6 +5,7 @@ using UnityEngine;
 public class playercollision : MonoBehaviour
 {
     public static playercollision instance;
+    [SerializeField] private RagdollDeath death;
     [SerializeField] private PlayerMovement movement;
     [SerializeField] private Rigidbody rb;
     public Gmanager gm;
@@ -25,6 +26,7 @@ public class playercollision : MonoBehaviour
         
         if (col.gameObject.tag == "Obstacle")
         {
+            death.ToggleRagdoll(true);
             audioManager.instance.StopSound("Background");
             bool  played = false;
             
@@ -36,7 +38,7 @@ public class playercollision : MonoBehaviour
 
 
 
-
+                
                 CameraShake.instance.enabled = true;
                 CameraShake.instance.ShakeCamera(0.5f, 0.1f);
             
