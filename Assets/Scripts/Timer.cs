@@ -10,10 +10,11 @@ public class Timer : MonoBehaviour
     public string LevelToLoad;
     public float timer = 12f;
     private Text timerSeconds;
-   
+    
     // Start is called before the first frame update
     void Start()
     {
+
         instance = this;
         instance.enabled = false;
         timerSeconds = GetComponent<Text>();
@@ -28,11 +29,12 @@ public class Timer : MonoBehaviour
         {
             timerSeconds.text = timer.ToString("0");
             timer = 0;
-            Invoke("CompleteGame", 3f);
+            CompleteGame();
         }
     }
     void CompleteGame()
     {
+        
         Gmanager.instance.CompleteGame();
     }
 }

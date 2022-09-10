@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: d48a7646f5d0547e889733d84b50cb9f, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 1065b432639a84123a07ea43fe5ba4c9, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -6577,6 +6577,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1807494646}
     m_Modifications:
+    - target: {fileID: 4038063513627251628, guid: 4082463f243ba204f9fb34b568d5371e, type: 3}
+      propertyPath: ConfettiRain
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4038063513627251629, guid: 4082463f243ba204f9fb34b568d5371e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
