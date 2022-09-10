@@ -85,6 +85,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7638499658918488438}
     m_Modifications:
+    - target: {fileID: 3597638156406711332, guid: d74ea3daf35c784419cb1236ff909ea8, type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597638156406711333, guid: d74ea3daf35c784419cb1236ff909ea8, type: 3}
+      propertyPath: m_Color.a
+      value: 0.5372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597638156406711333, guid: d74ea3daf35c784419cb1236ff909ea8, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597638156406711333, guid: d74ea3daf35c784419cb1236ff909ea8, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597638156406711333, guid: d74ea3daf35c784419cb1236ff909ea8, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3597638156406711353, guid: d74ea3daf35c784419cb1236ff909ea8, type: 3}
       propertyPath: m_Name
       value: Restart Game
@@ -119,11 +139,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3597638156406711354, guid: d74ea3daf35c784419cb1236ff909ea8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1131.0696
+      value: 1159.1238
       objectReference: {fileID: 0}
     - target: {fileID: 3597638156406711354, guid: d74ea3daf35c784419cb1236ff909ea8, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 299.0579
+      value: 280.3551
       objectReference: {fileID: 0}
     - target: {fileID: 3597638156406711354, guid: d74ea3daf35c784419cb1236ff909ea8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -155,11 +175,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3597638156406711354, guid: d74ea3daf35c784419cb1236ff909ea8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -5.4828
+      value: -9.3514
       objectReference: {fileID: 0}
     - target: {fileID: 3597638156406711354, guid: d74ea3daf35c784419cb1236ff909ea8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -796.20825
+      value: -853
       objectReference: {fileID: 0}
     - target: {fileID: 3597638156406711354, guid: d74ea3daf35c784419cb1236ff909ea8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -221,11 +241,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 976565515748279680, guid: b9aacfedb1f9551408de9fa90616d00c, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 721.9045
+      value: 600.3364
       objectReference: {fileID: 0}
     - target: {fileID: 976565515748279680, guid: b9aacfedb1f9551408de9fa90616d00c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 322.0984
+      value: 284.6927
       objectReference: {fileID: 0}
     - target: {fileID: 976565515748279680, guid: b9aacfedb1f9551408de9fa90616d00c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -257,11 +277,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 976565515748279680, guid: b9aacfedb1f9551408de9fa90616d00c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -26.3942
+      value: -14.027
       objectReference: {fileID: 0}
     - target: {fileID: 976565515748279680, guid: b9aacfedb1f9551408de9fa90616d00c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1172.6862
+      value: -1247
       objectReference: {fileID: 0}
     - target: {fileID: 976565515748279680, guid: b9aacfedb1f9551408de9fa90616d00c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -279,10 +299,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Quit Game
       objectReference: {fileID: 0}
+    - target: {fileID: 976565515748279682, guid: b9aacfedb1f9551408de9fa90616d00c, type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 976565515748279683, guid: b9aacfedb1f9551408de9fa90616d00c, type: 3}
       propertyPath: PauseMenu
       value: 
       objectReference: {fileID: 7638499658918488439}
+    - target: {fileID: 976565515748279685, guid: b9aacfedb1f9551408de9fa90616d00c, type: 3}
+      propertyPath: m_Color.a
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 976565515748279685, guid: b9aacfedb1f9551408de9fa90616d00c, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 976565515748279685, guid: b9aacfedb1f9551408de9fa90616d00c, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 976565515748279685, guid: b9aacfedb1f9551408de9fa90616d00c, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9aacfedb1f9551408de9fa90616d00c, type: 3}
 --- !u!224 &7461360475298412984 stripped
