@@ -12,12 +12,14 @@ GameObject:
   - component: {fileID: 6050906672258774194}
   - component: {fileID: 8367077633268547704}
   - component: {fileID: 7195698215336567006}
-  - component: {fileID: 4927489628591055591}
   - component: {fileID: -3929723716884723217}
   - component: {fileID: -4709198484454099607}
+  - component: {fileID: 1040501025}
+  - component: {fileID: 1040501026}
+  - component: {fileID: 1040501027}
   m_Layer: 0
   m_Name: Rolling Barrel
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 8006600478672101805}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 0.030000001, y: 0.029999994, z: 0.029999994}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -108,22 +110,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!54 &4927489628591055591
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8006600478672101805}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!65 &-3929723716884723217
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -149,5 +135,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab39943a268767e41b94b8bda8810f77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 4927489628591055591}
+  rb: {fileID: 0}
+  pickupEffect: {fileID: 2211486161619669868, guid: e512b74f32e4615449ed63ef411f1c50, type: 3}
+--- !u!54 &1040501025
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8006600478672101805}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &1040501026
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8006600478672101805}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.49591577, y: 0.41978043, z: 0.4197805}
+  m_Center: {x: 0.0009091273, y: 0.00011762977, z: 0.00019257516}
+--- !u!114 &1040501027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8006600478672101805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab39943a268767e41b94b8bda8810f77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 1040501025}
   pickupEffect: {fileID: 0}

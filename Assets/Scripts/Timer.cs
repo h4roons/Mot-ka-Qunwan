@@ -28,7 +28,11 @@ public class Timer : MonoBehaviour
         {
             timerSeconds.text = timer.ToString("0");
             timer = 0;
-            Gmanager.instance.CompleteGame();
+            Invoke("CompleteGame", 3f);
         }
+    }
+    void CompleteGame()
+    {
+        Gmanager.instance.CompleteGame();
     }
 }

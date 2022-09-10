@@ -128,4 +128,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1304846397207690956}
-  CollisionEffect: {fileID: 100002, guid: 105894b9b3157d84783a4a24732ac29d, type: 3}
+  CollisionEffect: {fileID: 2211486161619669868, guid: e512b74f32e4615449ed63ef411f1c50, type: 3}

@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1114269981784434893}
   - component: {fileID: 647418663282513976}
+  - component: {fileID: 1979266082}
+  - component: {fileID: 659161325}
+  - component: {fileID: 659161324}
   m_Layer: 0
   m_Name: Pushing Pillar
   m_TagString: Obstacle
@@ -26,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 305538929175835255}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 0.029999997, y: 0.030000003, z: 0.029999988}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 703352822813460844}
@@ -54,6 +57,49 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &1979266082
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305538929175835255}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &659161325
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305538929175835255}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 1
+--- !u!114 &659161324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305538929175835255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e59a560bd1795f34584f7f8c9dc9638e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 659161325}
+  CollisionEffect: {fileID: 2211486161619669868, guid: e512b74f32e4615449ed63ef411f1c50, type: 3}
 --- !u!1 &6169499743641794770
 GameObject:
   m_ObjectHideFlags: 0
@@ -68,6 +114,7 @@ GameObject:
   - component: {fileID: 2820019800061722716}
   - component: {fileID: 6834704221258081085}
   - component: {fileID: 7820437857551572412}
+  - component: {fileID: 251551595}
   m_Layer: 0
   m_Name: Obstacle-26.001
   m_TagString: Obstacle
@@ -167,7 +214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 7820437857551572412}
-  CollisionEffect: {fileID: 0}
+  CollisionEffect: {fileID: 2211486161619669868, guid: e512b74f32e4615449ed63ef411f1c50, type: 3}
 --- !u!54 &7820437857551572412
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -184,6 +231,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!136 &251551595
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6169499743641794770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.20280267
+  m_Height: 0.7500003
+  m_Direction: 1
+  m_Center: {x: 0.000000007450586, y: 0.37500006, z: 0.00000095088035}
 --- !u!1 &8193471854467185054
 GameObject:
   m_ObjectHideFlags: 0

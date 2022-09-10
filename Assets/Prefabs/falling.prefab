@@ -147,9 +147,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164786427521931535}
-  m_LocalRotation: {x: -0.9189611, y: 0.22722925, z: 0.07736432, w: 0.31287715}
+  m_LocalRotation: {x: -0.9189608, y: 0.22723255, z: 0.07736514, w: 0.31287566}
   m_LocalPosition: {x: 9.669999, y: 42.71001, z: -6.620004}
-  m_LocalScale: {x: 1.5000002, y: 1.500001, z: 1.5000008}
+  m_LocalScale: {x: 0.015000005, y: 0.015000002, z: 0.015000008}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 768654613173816633}
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 164786427521931529}
-  pickupEffect: {fileID: 100002, guid: 105894b9b3157d84783a4a24732ac29d, type: 3}
+  pickupEffect: {fileID: 2211486161619669868, guid: e512b74f32e4615449ed63ef411f1c50, type: 3}
 --- !u!1 &377083470499479588
 GameObject:
   m_ObjectHideFlags: 0

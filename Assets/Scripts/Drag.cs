@@ -14,7 +14,7 @@ public class Drag : MonoBehaviour
         // Start is called before the first frame update
     void Start()
     {
-        Instantiate(pickupEffect, transform.position, transform.rotation);
+        
         instance = this;
         this.enabled = false ;
        
