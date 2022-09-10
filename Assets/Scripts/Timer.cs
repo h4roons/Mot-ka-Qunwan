@@ -10,26 +10,38 @@ public class Timer : MonoBehaviour
     public string LevelToLoad;
     public float timer = 12f;
     private Text timerSeconds;
-    
-    // Start is called before the first frame update
+    public Slider timerslider;
+
+    private bool stoptimer;
     void Start()
     {
 
         instance = this;
         instance.enabled = false;
         timerSeconds = GetComponent<Text>();
+        timerslider.maxValue = timer;
+        timerslider.value = timer;
+        
+        
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         timer -= Time.deltaTime;
+
         timerSeconds.text = timer.ToString("f2");
         if (timer <= 0)
         {
             timerSeconds.text = timer.ToString("0");
+            stoptimer = true;
             timer = 0;
             CompleteGame();
+        }
+
+        if(stoptimer == false)
+        {
+            timerslider.value = timer;
+
         }
     }
     void CompleteGame()
