@@ -7,7 +7,7 @@ public class ScoreScript : MonoBehaviour
     public TextMeshProUGUI text;
     private int ScoreNum;
     public GameObject ParticleEffect;
-    // Start is called before the first frame update
+   
     void Start()
     {
         ScoreNum = 0;
