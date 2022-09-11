@@ -4318,6 +4318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d99c8e60f041c4e96c576a220a43d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  death: {fileID: 0}
   movement: {fileID: 1213909993}
   rb: {fileID: 1213909992}
   gm: {fileID: 657711485}
@@ -8773,6 +8774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d99c8e60f041c4e96c576a220a43d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  death: {fileID: 0}
   movement: {fileID: 919132149441351445}
   rb: {fileID: 1840081476}
   gm: {fileID: 657711485}
