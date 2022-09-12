@@ -9,5 +9,6 @@ public class Menu : MonoBehaviour
         Debug.Log("start");
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
         Initiate.Fade("Level Selector", Color.black, 6f);
+        
     }
 }

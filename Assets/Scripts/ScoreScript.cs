@@ -11,7 +11,7 @@ public class ScoreScript : MonoBehaviour
     void Start()
     {
         ScoreNum = 0;
-        text.text = "Score : " + ScoreNum; 
+        text.text = " x" + ScoreNum;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -21,7 +21,7 @@ public class ScoreScript : MonoBehaviour
             Instantiate(ParticleEffect, transform.position, transform.rotation);
             ScoreNum++;
             Destroy(other.gameObject);
-            text.text = "Score : " + ScoreNum;
+            text.text = " x" + ScoreNum;
         }
     }
 }
