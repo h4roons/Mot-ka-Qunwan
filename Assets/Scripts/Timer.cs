@@ -11,7 +11,8 @@ public class Timer : MonoBehaviour
     public float timer = 12f;
     private Text timerSeconds;
     public Slider timerslider;
-    public GameObject ParticleEffect;
+    //public GameObject ParticleEffect;
+    public ParticleSystem Confetti;
 
     private bool stoptimer;
     void Start()
@@ -19,17 +20,21 @@ public class Timer : MonoBehaviour
 
         instance = this;
         instance.enabled = false;
+        
         timerSeconds = GetComponent<Text>();
         timerslider.maxValue = timer;
         timerslider.value = timer;
-        ParticleEffect.SetActive(false) ;
-        
-        
+        //ParticleEffect.SetActive(false);
+        Confetti.Stop();
+
+
+
     }
 
     void FixedUpdate()
     {
         timer -= Time.deltaTime;
+        
 
         timerSeconds.text = timer.ToString("f2");
         if (timer <= 0)
@@ -37,7 +42,8 @@ public class Timer : MonoBehaviour
             timerSeconds.text = timer.ToString("0");
             stoptimer = true;
             timer = 0;
-            ParticleEffect.SetActive(true);
+            //ParticleEffect.SetActive(true);
+            Confetti.Play();
             Invoke("CompleteGame", 3f);
         }
 

@@ -2957,6 +2957,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
+--- !u!198 &865367182 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198663463597404094, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
+  m_PrefabInstance: {fileID: 865367181}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &872880442 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1017325822454138, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
@@ -6745,6 +6750,10 @@ PrefabInstance:
       propertyPath: timer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8903727125967680700, guid: f80e4b7e7ac59eb41bad67a7ded7bc81, type: 3}
+      propertyPath: Confetti
+      value: 
+      objectReference: {fileID: 865367182}
     - target: {fileID: 8903727125967680700, guid: f80e4b7e7ac59eb41bad67a7ded7bc81, type: 3}
       propertyPath: LevelToLoad
       value: 
