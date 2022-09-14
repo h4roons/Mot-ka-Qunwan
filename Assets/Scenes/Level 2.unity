@@ -1364,6 +1364,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
+--- !u!1 &345527781 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1017325822454138, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
+  m_PrefabInstance: {fileID: 345527780}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &358737787
 GameObject:
   m_ObjectHideFlags: 0
@@ -3069,6 +3074,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8903727125967680700, guid: f80e4b7e7ac59eb41bad67a7ded7bc81, type: 3}
+      propertyPath: ParticleEffect
+      value: 
+      objectReference: {fileID: 345527781}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f80e4b7e7ac59eb41bad67a7ded7bc81, type: 3}
 --- !u!1 &800898443 stripped

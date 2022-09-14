@@ -11,6 +11,7 @@ public class Timer : MonoBehaviour
     public float timer = 12f;
     private Text timerSeconds;
     public Slider timerslider;
+    public GameObject ParticleEffect;
 
     private bool stoptimer;
     void Start()
@@ -21,6 +22,7 @@ public class Timer : MonoBehaviour
         timerSeconds = GetComponent<Text>();
         timerslider.maxValue = timer;
         timerslider.value = timer;
+        ParticleEffect.SetActive(false) ;
         
         
     }
@@ -35,7 +37,8 @@ public class Timer : MonoBehaviour
             timerSeconds.text = timer.ToString("0");
             stoptimer = true;
             timer = 0;
-            CompleteGame();
+            ParticleEffect.SetActive(true);
+            Invoke("CompleteGame", 3f);
         }
 
         if(stoptimer == false)
