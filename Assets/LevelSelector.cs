@@ -26,6 +26,7 @@ public class LevelSelector : MonoBehaviour
         //SceneManager.LoadSceneAsync("Level " + level);
         //Debug.Log("Button Pressed");
         StartCoroutine(LoadASynchronously());
+        
 
     }
     IEnumerator LoadASynchronously()
