@@ -6480,7 +6480,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &372266123
 GameObject:
   m_ObjectHideFlags: 0
@@ -11843,6 +11843,8 @@ MonoBehaviour:
   completelevelUI: {fileID: 5757867155812918857}
   player: {fileID: 1406167632}
   stadium: {fileID: 1139321395634855673}
+  NPCS: {fileID: 371356515}
+  Bike: {fileID: 1986537526}
 --- !u!4 &657711486
 Transform:
   m_ObjectHideFlags: 0
@@ -34977,6 +34979,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 198663463597404094, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 212329481800916739, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
       propertyPath: gm
       value: 
@@ -35037,12 +35043,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bikeeee
       objectReference: {fileID: 0}
+    - target: {fileID: 8896481559893810418, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 504984613, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
 --- !u!198 &1986537525 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 198663463597404094, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
+  m_PrefabInstance: {fileID: 1986537524}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1986537526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8896481559893810418, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
   m_PrefabInstance: {fileID: 1986537524}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1987257302

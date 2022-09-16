@@ -1616,6 +1616,11 @@ Transform:
   m_Father: {fileID: 3527964456914788134}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &441108975 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6053690567900325036, guid: 6deb8b808e462634db8f30ecd82bab4a, type: 3}
+  m_PrefabInstance: {fileID: 1211997860}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &450870963
 GameObject:
   m_ObjectHideFlags: 0
@@ -2397,6 +2402,8 @@ MonoBehaviour:
   completelevelUI: {fileID: 5757867155812918857}
   player: {fileID: 504984605}
   stadium: {fileID: 1139321395634855673}
+  NPCS: {fileID: 441108975}
+  Bike: {fileID: 721152917}
 --- !u!4 &657711486
 Transform:
   m_ObjectHideFlags: 0
@@ -2694,6 +2701,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 709984774}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &721152917 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8896481559893810418, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
+  m_PrefabInstance: {fileID: 865367181}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &803030865
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2899,6 +2911,10 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 483613317}
+    - target: {fileID: 198663463597404094, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 212329481800916739, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
       propertyPath: gm
       value: 
@@ -2954,6 +2970,10 @@ PrefabInstance:
     - target: {fileID: 8896481559893810418, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
       propertyPath: m_Name
       value: Bikeeee
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896481559893810418, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
@@ -3935,6 +3955,10 @@ PrefabInstance:
     - target: {fileID: 6053690567900325036, guid: 6deb8b808e462634db8f30ecd82bab4a, type: 3}
       propertyPath: m_Name
       value: NPCs 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053690567900325036, guid: 6deb8b808e462634db8f30ecd82bab4a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6deb8b808e462634db8f30ecd82bab4a, type: 3}
@@ -6646,6 +6670,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4871331270198594529, guid: f80e4b7e7ac59eb41bad67a7ded7bc81, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.70825195
+      objectReference: {fileID: 0}
     - target: {fileID: 4871331270307245308, guid: f80e4b7e7ac59eb41bad67a7ded7bc81, type: 3}
       propertyPath: cube
       value: 

@@ -1258,6 +1258,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 198663463597404094, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 212329481800916739, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
       propertyPath: gm
       value: 
@@ -1359,6 +1363,10 @@ PrefabInstance:
       value: Bikeeee
       objectReference: {fileID: 0}
     - target: {fileID: 8896481559893810418, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896481559893810418, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
@@ -1372,6 +1380,11 @@ GameObject:
 --- !u!198 &345527782 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 198663463597404094, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
+  m_PrefabInstance: {fileID: 345527780}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &345527783 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8896481559893810418, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
   m_PrefabInstance: {fileID: 345527780}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &358737787
@@ -1879,11 +1892,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPCs 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6053690567900325036, guid: 6deb8b808e462634db8f30ecd82bab4a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6deb8b808e462634db8f30ecd82bab4a, type: 3}
 --- !u!4 &478173460 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6053690566311971691, guid: 6deb8b808e462634db8f30ecd82bab4a, type: 3}
+  m_PrefabInstance: {fileID: 478173459}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &478173461 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6053690567900325036, guid: 6deb8b808e462634db8f30ecd82bab4a, type: 3}
   m_PrefabInstance: {fileID: 478173459}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &478511671
@@ -2541,6 +2563,8 @@ MonoBehaviour:
   completelevelUI: {fileID: 800898445}
   player: {fileID: 2085337318}
   stadium: {fileID: 1139321395634855673}
+  NPCS: {fileID: 478173461}
+  Bike: {fileID: 345527783}
 --- !u!4 &657711486
 Transform:
   m_ObjectHideFlags: 0

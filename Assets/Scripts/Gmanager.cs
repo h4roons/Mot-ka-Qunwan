@@ -11,10 +11,15 @@ public class Gmanager : MonoBehaviour
     public GameObject completelevelUI;
     public GameObject player;
     public GameObject stadium;
+    public GameObject NPCS;
+    public GameObject Bike;
 
     private void Start()
     {
         instance = this;
+        Bike.SetActive(true);
+        NPCS.SetActive(true);
+        
 
     }
     public void Begin()

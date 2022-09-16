@@ -2799,6 +2799,8 @@ MonoBehaviour:
   completelevelUI: {fileID: 5757867155812918857}
   player: {fileID: 2003381923}
   stadium: {fileID: 1139321395634855673}
+  NPCS: {fileID: 6053690568070305744}
+  Bike: {fileID: 1916959832}
 --- !u!4 &657711486
 Transform:
   m_ObjectHideFlags: 0
@@ -7232,6 +7234,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 198663463597404094, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 212329481800916739, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
       propertyPath: gm
       value: 
@@ -7292,9 +7298,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bikeeee
       objectReference: {fileID: 0}
+    - target: {fileID: 8896481559893810418, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 504984613, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
+--- !u!1 &1916959832 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8896481559893810418, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
+  m_PrefabInstance: {fileID: 1916959831}
+  m_PrefabAsset: {fileID: 0}
 --- !u!850595691 &1938715040
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -9020,8 +9035,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPCs
       objectReference: {fileID: 0}
+    - target: {fileID: 6053690567900325036, guid: 6deb8b808e462634db8f30ecd82bab4a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6deb8b808e462634db8f30ecd82bab4a, type: 3}
+--- !u!1 &6053690568070305744 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6053690567900325036, guid: 6deb8b808e462634db8f30ecd82bab4a, type: 3}
+  m_PrefabInstance: {fileID: 6053690568070305743}
+  m_PrefabAsset: {fileID: 0}
 --- !u!23 &6495211231679407440
 MeshRenderer:
   m_ObjectHideFlags: 0
