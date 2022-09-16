@@ -18,11 +18,11 @@ public class ScoreScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Score")
+        if (other.tag == "Player")
         {
             Instantiate(ParticleEffect, transform.position, transform.rotation);
             ScoreNum++;
-            Destroy(other.gameObject);
+            Destroy(gameObject);
             text.text = " x" + ScoreNum;
             
         }

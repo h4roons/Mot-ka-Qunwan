@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4124641977903227438}
   - component: {fileID: 4124641979333580751}
   - component: {fileID: 5725010512417797635}
+  - component: {fileID: 3170807145555700241}
   m_Layer: 0
   m_Name: moneystash
   m_TagString: Score
@@ -114,3 +115,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &3170807145555700241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4124641977905233134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d4a8b087e44ef4dbbc981c10dae632, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  ParticleEffect: {fileID: 104412, guid: 50e777ef58b890e428a76efb19f79280, type: 3}
