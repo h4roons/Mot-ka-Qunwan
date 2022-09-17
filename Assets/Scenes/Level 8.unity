@@ -3538,15 +3538,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7276304055105520617, guid: 324185d0c885f0a4dbbc267e87512ef8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.17744155
+      value: -0.1731
       objectReference: {fileID: 0}
     - target: {fileID: 7276304055105520617, guid: 324185d0c885f0a4dbbc267e87512ef8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.012392723
+      value: 0.0107
       objectReference: {fileID: 0}
     - target: {fileID: 7276304055105520617, guid: 324185d0c885f0a4dbbc267e87512ef8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.06981308
+      value: 0.0705
       objectReference: {fileID: 0}
     - target: {fileID: 7276304055105520617, guid: 324185d0c885f0a4dbbc267e87512ef8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -26876,43 +26876,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7276304055105520617, guid: 324185d0c885f0a4dbbc267e87512ef8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.10533137
+      value: -0.09685682
       objectReference: {fileID: 0}
     - target: {fileID: 7276304055105520617, guid: 324185d0c885f0a4dbbc267e87512ef8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.12436867
+      value: -0.12848955
       objectReference: {fileID: 0}
     - target: {fileID: 7276304055105520617, guid: 324185d0c885f0a4dbbc267e87512ef8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.02953755
+      value: 0.03073181
       objectReference: {fileID: 0}
     - target: {fileID: 7276304055105520617, guid: 324185d0c885f0a4dbbc267e87512ef8, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.6849596
+      value: 0.6912408
       objectReference: {fileID: 0}
     - target: {fileID: 7276304055105520617, guid: 324185d0c885f0a4dbbc267e87512ef8, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.36363345
+      value: 0.35154688
       objectReference: {fileID: 0}
     - target: {fileID: 7276304055105520617, guid: 324185d0c885f0a4dbbc267e87512ef8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.5929992
+      value: 0.59671366
       objectReference: {fileID: 0}
     - target: {fileID: 7276304055105520617, guid: 324185d0c885f0a4dbbc267e87512ef8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.21668628
+      value: -0.2062375
       objectReference: {fileID: 0}
     - target: {fileID: 7276304055105520617, guid: 324185d0c885f0a4dbbc267e87512ef8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 130.963
+      value: 132.93399
       objectReference: {fileID: 0}
     - target: {fileID: 7276304055105520617, guid: 324185d0c885f0a4dbbc267e87512ef8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -92.819
+      value: -93.42499
       objectReference: {fileID: 0}
     - target: {fileID: 7276304055105520617, guid: 324185d0c885f0a4dbbc267e87512ef8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -168.16699
+      value: -168.618
       objectReference: {fileID: 0}
     - target: {fileID: 8048301214254553427, guid: 324185d0c885f0a4dbbc267e87512ef8, type: 3}
       propertyPath: m_Name
@@ -26921,6 +26921,18 @@ PrefabInstance:
     - target: {fileID: 8048301214254553427, guid: 324185d0c885f0a4dbbc267e87512ef8, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8115045831624973156, guid: 324185d0c885f0a4dbbc267e87512ef8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8115045831624973156, guid: 324185d0c885f0a4dbbc267e87512ef8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8115045831624973156, guid: 324185d0c885f0a4dbbc267e87512ef8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.03
       objectReference: {fileID: 0}
     - target: {fileID: 8729104195628159493, guid: 324185d0c885f0a4dbbc267e87512ef8, type: 3}
       propertyPath: m_TagString
