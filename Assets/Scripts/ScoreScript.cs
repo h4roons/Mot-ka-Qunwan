@@ -11,9 +11,10 @@ public class ScoreScript : MonoBehaviour
    
     void Start()
     {
-        
+
         ScoreNum = 0;
         text.text = " x" + ScoreNum;
+        
     }
 
     private void OnTriggerEnter(Collider other)
