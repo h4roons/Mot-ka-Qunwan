@@ -20,7 +20,7 @@ public class CigarettePowerup : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            
+            audioManager.instance.PlaySound("Cigarette");
             StartCoroutine( Pickup(other) );
            
         }

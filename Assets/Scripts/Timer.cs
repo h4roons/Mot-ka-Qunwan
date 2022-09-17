@@ -42,8 +42,8 @@ public class Timer : MonoBehaviour
             stoptimer = true;
             timer = 0;
             //ParticleEffect.SetActive(true);
-           // Confetti.Play();
-            Invoke("CompleteGame", 3f);
+            // Confetti.Play();
+            CompleteGame();
         }
 
         if(stoptimer == false)

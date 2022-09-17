@@ -5,27 +5,37 @@ using TMPro;
 public class ScoreScript : MonoBehaviour
 {
     
-    public TextMeshProUGUI text;
-    private int ScoreNum;
+    
     public GameObject ParticleEffect;
    
     void Start()
     {
 
-        ScoreNum = 0;
-        text.text = " x" + ScoreNum;
+        
+        
         
     }
+    
 
     private void OnTriggerEnter(Collider other)
     {
+        
+         
         if (other.tag == "Player")
         {
-            Instantiate(ParticleEffect, transform.position, transform.rotation);
-            ScoreNum++;
-            Destroy(gameObject);
-            text.text = " x" + ScoreNum;
             
+                Instantiate(ParticleEffect, transform.position, transform.rotation);
+                
+                
+                Destroy(gameObject);
+                
+
+            
+            
+            
+
+
         }
     }
+   
 }

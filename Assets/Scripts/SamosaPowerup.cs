@@ -21,7 +21,7 @@ public class SamosaPowerup : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            
+            audioManager.instance.PlaySound("Samosa");
             StartCoroutine( Pickup(other) );
            
         }
