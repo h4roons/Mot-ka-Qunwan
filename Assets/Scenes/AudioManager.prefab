@@ -52,7 +52,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: ec059801f07da004cb6d38fa6a28a711, type: 3}
     source: {fileID: 0}
   - SoundName: Game Start
-    clip: {fileID: 8300000, guid: f3848c84f3c64be43abab3c201244518, type: 3}
+    clip: {fileID: 8300000, guid: af5b6cfe697ae9e4cbd0f4b394b18dca, type: 3}
     source: {fileID: 0}
   - SoundName: Samosa
     clip: {fileID: 8300000, guid: 568331b179f88b941b55cf1b4428e9ae, type: 3}
