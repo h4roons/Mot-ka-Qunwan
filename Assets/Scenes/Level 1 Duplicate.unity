@@ -1616,11 +1616,6 @@ Transform:
   m_Father: {fileID: 3527964456914788134}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &441108975 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6053690567900325036, guid: 6deb8b808e462634db8f30ecd82bab4a, type: 3}
-  m_PrefabInstance: {fileID: 1211997860}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &450870963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1815,22 +1810,6 @@ Transform:
   m_Father: {fileID: 3527964456914788134}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &483613317 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8369121119174299358, guid: f80e4b7e7ac59eb41bad67a7ded7bc81, type: 3}
-  m_PrefabInstance: {fileID: 4871331270445540717}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &504984605 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 112316289286680971, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
-  m_PrefabInstance: {fileID: 865367181}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &539811173
 GameObject:
   m_ObjectHideFlags: 0
@@ -2400,9 +2379,7 @@ MonoBehaviour:
   timer: {fileID: 1884242558}
   restartdelay: 2
   completelevelUI: {fileID: 5757867155812918857}
-  player: {fileID: 504984605}
   stadium: {fileID: 1139321395634855673}
-  NPCS: {fileID: 441108975}
   Bike: {fileID: 721152917}
 --- !u!4 &657711486
 Transform:
@@ -2901,7 +2878,7 @@ PrefabInstance:
     - target: {fileID: 504984613, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
       propertyPath: text
       value: 
-      objectReference: {fileID: 483613317}
+      objectReference: {fileID: 0}
     - target: {fileID: 198663463597404094, guid: deecd0aade6f3e24bb25f9eb77aa7b4d, type: 3}
       propertyPath: playOnAwake
       value: 0
@@ -6496,7 +6473,7 @@ Transform:
   m_GameObject: {fileID: 613233473064161740}
   m_LocalRotation: {x: -0.9943379, y: 0, z: 0, w: -0.10626401}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 100, y: 100, z: 150}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6982472636549709427}
@@ -7078,7 +7055,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d2f2cf6f8007854586f55b300638888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gm: {fileID: 657711485}
 --- !u!4 &6982472636549709427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3488584287860047645, guid: 4027315bc30497c4ca7ccf89596eb5f5, type: 3}
