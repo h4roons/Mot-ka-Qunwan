@@ -6406,7 +6406,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6266f478eb0a9dd4e863f6d81f4c4bc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: -4
+  initialSpeed: -2
+  maxSpeed: -10
+  speedIncreaseAmount: -2
+  speedIncreaseInterval: 5
   _cubeAxis: {fileID: 3527964456914788134}
 --- !u!4 &1401781699923371496
 Transform:

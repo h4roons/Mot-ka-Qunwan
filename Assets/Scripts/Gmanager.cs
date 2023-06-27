@@ -25,7 +25,7 @@ public class Gmanager : MonoBehaviour
       
         PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
         timer.SetActive(true);
-        Timer.instance.enabled = true;   
+        Timer.instance.enabled = false;   
         Drag.instance.enabled = true;
         //player.GetComponent<PlayerMovement>().enabled = true;
         stadium.GetComponent<stadiumMovement>().enabled = true;
@@ -56,7 +56,7 @@ public class Gmanager : MonoBehaviour
     {
         
         Time.timeScale = 1f;
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
         Timer.instance.enabled = false;
         timer.SetActive(false);
 
