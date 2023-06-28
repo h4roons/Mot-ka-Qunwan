@@ -54,7 +54,7 @@ public class Gmanager : MonoBehaviour
 
     void Restart()
     {
-        
+
         Time.timeScale = 1f;
         SceneManager.LoadScene(2);
         Timer.instance.enabled = false;
